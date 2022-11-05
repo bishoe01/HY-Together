@@ -6,6 +6,7 @@ import Navigation from './components/layout/navigation';
 import Department from './components/department';
 import { useEffect, useState } from 'react';
 import Home from './components/layout/home';
+
 function App() {
   const [selfInfo, setselfInfo] = useState(null);
   useEffect(() => {
@@ -25,7 +26,7 @@ function App() {
       <Route path={`/${selfInfo}`} element={<Department deparment={selfInfo}/>}/>
       {/* <Route path="/contact" element={<Contact/>}/> */}
     </Routes>
-    <Footer />
+    <Footer/>
     </>
   );
 }

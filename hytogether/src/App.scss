@@ -21,7 +21,7 @@ $categorySize : 585px;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'roboto';
+  font-family: 'noto';
 
   h1,
   h2,
@@ -31,12 +31,16 @@ $categorySize : 585px;
   h6 {
     padding: 0;
   }
-  li,a,button {
+
+  li,
+  a,
+  button {
     font-size: 16px;
-    color: #5A8DFF;
+
     text-decoration: none;
+  }
 }
-}
+
 
 
 // navbar
@@ -48,6 +52,7 @@ $categorySize : 585px;
   background-color: white;
   width: 100%;
   height: 80px;
+
 
   .img {
     position: relative;
@@ -62,26 +67,120 @@ $categorySize : 585px;
     list-style: none;
     padding-left: 20px;
     margin: 0;
-    li{
+
+    li {
       padding: 0 20px;
+
       cursor: pointer;
       line-height: 80px;
+
+      a {
+        color: $mainColor;
+      }
     }
   }
 
-  .nav__btn{
+  .nav__btn {
     display: flex;
     width: 300px;
     justify-content: space-evenly;
-    .reserve, .profile{
+
+    .reserve,
+    .profile {
       color: white;
-    background-color: #5A8DFF;
-    padding: 0 28px;
-    height: 38px;
-    border-radius: 20px;
-    border: none;
-    font-size: 14px;
-    cursor: pointer;
+      background-color: #5A8DFF;
+      padding: 0 28px;
+      height: 38px;
+      border-radius: 20px;
+      border: none;
+      font-size: 14px;
+      cursor: pointer;
     }
+  }
 }
+
+// Footer
+
+.footer {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding-top: 40px;
+  background-color: #5A8DFF;
+  height: 220px;
+  color: white;
+
+  .leftContainer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+    width: 40%;
+    align-items: flex-start;
+
+    .together {
+      width: 150px;
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+
+    .email,
+    .tel {
+      font-size: 16px;
+      padding: 5px 0px;
+    }
+
+    .copyright {
+      margin: 0px;
+      font-size: 16px;
+      color: lightgray;
+    }
+
+
+  }
+
+  // Right Container
+  .rightContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+
+    .links {
+      display: flex;
+      list-style: none;
+
+      li {
+        color: white;
+        font-size: 22px;
+        padding: 0 80px;
+
+        a {
+          color: white;
+
+          &:hover {
+            color: black;
+          }
+
+        }
+
+      }
+
+    }
+
+    .logos {
+      display: flex;
+      justify-content: space-between;
+      font-size: 22px;
+      padding-top: 40px;
+
+      .logo{
+        width: 30px;
+        height: 30px;
+        padding: 0 80px;
+        transition: all 200ms ease-in;
+        cursor: pointer;
+      }
+    }
+  }
 }
