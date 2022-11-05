@@ -1,0 +1,33 @@
+$mainColor: #5A8DFF;
+$secondaryColor: #FF5A5A;
+$tertiaryColor: #5AFF5A;
+$quaternaryColor: #FF5AFF;
+$quinaryColor: #5A5AFF;
+$senaryColor: #FFA55A;
+$borderColor : #5C5C5C;
+$categorySize : 585px;
+
+@font-face {
+  font-family: roboto;
+  src: url('./fonts/ROTOBO/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: noto;
+  src: url('./fonts/Noto_Sans/NotoSans-Regular.ttf');
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'roboto';
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    padding: 0;
+  }
+}
