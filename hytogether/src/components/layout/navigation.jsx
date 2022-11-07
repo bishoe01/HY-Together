@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, useNavigate } from "react-router-dom";
 import '../../App.scss';
+import ScrollBtn from '../scroll';
 export default function Navigation() {
     const navigate = useNavigate();
     return (
@@ -17,6 +18,9 @@ export default function Navigation() {
             <div className="nav__btn">
                 <button className="reserve">예약 확인</button>
                 <button className="profile">프로필 수정</button>
+            </div>
+            <div className="subnav">
+            <ScrollBtn/>
             </div>
         </nav>
     )

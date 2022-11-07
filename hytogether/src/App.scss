@@ -43,6 +43,7 @@ $categorySize : 585px;
 
 
 
+
 // navbar
 .nav {
   display: flex;
@@ -96,6 +97,10 @@ $categorySize : 585px;
       font-size: 14px;
       cursor: pointer;
     }
+    
+  }
+  .subnav{
+    display: none;
   }
 }
 
@@ -161,11 +166,8 @@ $categorySize : 585px;
           &:hover {
             color: black;
           }
-
         }
-
       }
-
     }
 
     .logos {
@@ -174,7 +176,7 @@ $categorySize : 585px;
       font-size: 22px;
       padding-top: 40px;
 
-      .logo{
+      .logo {
         width: 30px;
         height: 30px;
         padding: 0 80px;
@@ -182,5 +184,25 @@ $categorySize : 585px;
         cursor: pointer;
       }
     }
+  }
+}
+
+// Footer끝
+
+
+// Home
+.main{
+  .mainBanner{
+    img{
+      height: 50vh;
+    }
+  }
+  .banner{
+    overflow: hidden;
+    width: 100%;
+    height: 90vh;
+    margin: 0 auto;
+    object-fit:cover;
+    
   }
 }

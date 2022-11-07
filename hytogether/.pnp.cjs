@@ -42,6 +42,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-reveal", "virtual:3d26b8e25d18bc08762af16b5266e1275b4ee3a28205e11133ddf33c6a7ee6343939f434d4a97e13a39ed0a652037fa9398d39426e43e6190cf750159a5c1d4a#npm:1.2.2"],\
             ["react-router-dom", "virtual:3d26b8e25d18bc08762af16b5266e1275b4ee3a28205e11133ddf33c6a7ee6343939f434d4a97e13a39ed0a652037fa9398d39426e43e6190cf750159a5c1d4a#npm:6.4.3"],\
             ["react-scripts", "virtual:3d26b8e25d18bc08762af16b5266e1275b4ee3a28205e11133ddf33c6a7ee6343939f434d4a97e13a39ed0a652037fa9398d39426e43e6190cf750159a5c1d4a#npm:5.0.1"],\
+            ["react-scroll", "virtual:3d26b8e25d18bc08762af16b5266e1275b4ee3a28205e11133ddf33c6a7ee6343939f434d4a97e13a39ed0a652037fa9398d39426e43e6190cf750159a5c1d4a#npm:1.8.8"],\
             ["sass", "npm:1.56.0"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
@@ -9952,6 +9953,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-reveal", "virtual:3d26b8e25d18bc08762af16b5266e1275b4ee3a28205e11133ddf33c6a7ee6343939f434d4a97e13a39ed0a652037fa9398d39426e43e6190cf750159a5c1d4a#npm:1.2.2"],\
             ["react-router-dom", "virtual:3d26b8e25d18bc08762af16b5266e1275b4ee3a28205e11133ddf33c6a7ee6343939f434d4a97e13a39ed0a652037fa9398d39426e43e6190cf750159a5c1d4a#npm:6.4.3"],\
             ["react-scripts", "virtual:3d26b8e25d18bc08762af16b5266e1275b4ee3a28205e11133ddf33c6a7ee6343939f434d4a97e13a39ed0a652037fa9398d39426e43e6190cf750159a5c1d4a#npm:5.0.1"],\
+            ["react-scroll", "virtual:3d26b8e25d18bc08762af16b5266e1275b4ee3a28205e11133ddf33c6a7ee6343939f434d4a97e13a39ed0a652037fa9398d39426e43e6190cf750159a5c1d4a#npm:1.8.8"],\
             ["sass", "npm:1.56.0"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
@@ -11715,6 +11717,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/lodash.sortby-npm-4.7.0-fda8ab950d-db170c9396.zip/node_modules/lodash.sortby/",\
           "packageDependencies": [\
             ["lodash.sortby", "npm:4.7.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["lodash.throttle", [\
+        ["npm:4.1.1", {\
+          "packageLocation": "./.yarn/cache/lodash.throttle-npm-4.1.1-856641af92-129c0a28ce.zip/node_modules/lodash.throttle/",\
+          "packageDependencies": [\
+            ["lodash.throttle", "npm:4.1.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -16129,6 +16140,34 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "eslint-config-react-app",\
             "react",\
             "typescript"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-scroll", [\
+        ["npm:1.8.8", {\
+          "packageLocation": "./.yarn/cache/react-scroll-npm-1.8.8-b6b6e9924d-66c86d25e2.zip/node_modules/react-scroll/",\
+          "packageDependencies": [\
+            ["react-scroll", "npm:1.8.8"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:3d26b8e25d18bc08762af16b5266e1275b4ee3a28205e11133ddf33c6a7ee6343939f434d4a97e13a39ed0a652037fa9398d39426e43e6190cf750159a5c1d4a#npm:1.8.8", {\
+          "packageLocation": "./.yarn/__virtual__/react-scroll-virtual-61370ed78c/0/cache/react-scroll-npm-1.8.8-b6b6e9924d-66c86d25e2.zip/node_modules/react-scroll/",\
+          "packageDependencies": [\
+            ["react-scroll", "virtual:3d26b8e25d18bc08762af16b5266e1275b4ee3a28205e11133ddf33c6a7ee6343939f434d4a97e13a39ed0a652037fa9398d39426e43e6190cf750159a5c1d4a#npm:1.8.8"],\
+            ["@types/react", null],\
+            ["@types/react-dom", null],\
+            ["lodash.throttle", "npm:4.1.1"],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:3d26b8e25d18bc08762af16b5266e1275b4ee3a28205e11133ddf33c6a7ee6343939f434d4a97e13a39ed0a652037fa9398d39426e43e6190cf750159a5c1d4a#npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
