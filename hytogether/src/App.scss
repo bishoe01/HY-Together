@@ -113,9 +113,12 @@ $categorySize : 585px;
   display: flex;
   width: 100%;
   padding-top: 40px;
-  background-color: white;
-  height: 220px;
-  color: $mainColor;
+  background-color: $mainColor;
+  height: 180px;
+  margin-top: 5px;
+  
+  border-radius: 10px;
+  color: white;
 
   .leftContainer {
     display: flex;
@@ -125,7 +128,7 @@ $categorySize : 585px;
     align-items: flex-start;
 
     .together {
-      width: 150px;
+      width: 125px;
       position: absolute;
       top: 30px;
       left: 30px;
@@ -140,7 +143,7 @@ $categorySize : 585px;
     .copyright {
       margin: 0px;
       font-size: 16px;
-      color: $mainColor;
+      color: lightgray;
     }
 
 
