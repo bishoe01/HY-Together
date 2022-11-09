@@ -47,6 +47,7 @@ $categorySize : 585px;
 // navbar
 .nav {
   display: flex;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   padding: 20px 10px;
@@ -100,7 +101,8 @@ $categorySize : 585px;
     
   }
   .subnav{
-    display: none;
+    position: absolute;
+    top: 100px;
   }
 }
 
@@ -111,9 +113,9 @@ $categorySize : 585px;
   display: flex;
   width: 100%;
   padding-top: 40px;
-  background-color: #5A8DFF;
+  background-color: white;
   height: 220px;
-  color: white;
+  color: $mainColor;
 
   .leftContainer {
     display: flex;
@@ -138,7 +140,7 @@ $categorySize : 585px;
     .copyright {
       margin: 0px;
       font-size: 16px;
-      color: lightgray;
+      color: $mainColor;
     }
 
 
@@ -193,9 +195,22 @@ $categorySize : 585px;
 // Home
 .main{
   .mainBanner{
+    height: 100vh;
     img{
-      height: 50vh;
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
     }
+    h1{
+      position: absolute;
+      text-align: center;
+      top: 20%;
+      left: 35%;
+      font-size: 50px;
+      color: #ffff;
+    }
+  }
+  .move{
   }
   .banner{
     overflow: hidden;
@@ -203,6 +218,10 @@ $categorySize : 585px;
     height: 90vh;
     margin: 0 auto;
     object-fit:cover;
-    
   }
+  
+}
+
+
+body{
 }
