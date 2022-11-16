@@ -20,7 +20,7 @@ export default function Navigation() {
                 <button className="profile">프로필 수정</button>
             </div>
             <div className="subnav">
-            <ScrollBtn/>
+            {/* <ScrollBtn/> */}
             </div>
         </nav>
     )
