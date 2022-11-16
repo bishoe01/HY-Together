@@ -16,4 +16,3 @@ export default function ScrollBtn(props){
         </div>
     )
 }
-

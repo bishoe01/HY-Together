@@ -21,9 +21,8 @@ function App() {
     <>
       <Navigation />
       <Routes>
-        <Route path="/" element={<body>
-          <Home />
-        </body>} />
+        <Route path="/" element={
+          <Home />} />
         {/* <Route path="/about" element={<About/>}/> */}
         <Route path={`/${selfInfo}`} element={<Department deparment={selfInfo} />} />
         {/* <Route path="/contact" element={<Contact/>}/> */}
