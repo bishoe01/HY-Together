@@ -1,7 +1,6 @@
 import React from 'react'
 import { Container, Grid, GridItem } from '@chakra-ui/react'
 const PublicLayout = ({ children }) => {
-  // console.log(props)
 
   return (
     <Container maxW={'container.xl'} style={{ marginTop: 80, height: '100%' }}>

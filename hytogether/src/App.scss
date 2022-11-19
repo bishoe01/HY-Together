@@ -50,42 +50,33 @@ $categorySize : 585px;
   position: fixed;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10px;
   background-color: white;
-  width: 100%;
-  height: 80px;
-
-
   .img {
     position: relative;
     width: 180px;
-    margin-left: 4rem;
     cursor: pointer;
   }
 
   .links {
     display: flex;
-    flex-grow: 2;
     list-style: none;
     padding-left: 20px;
     margin: 0;
 
     li {
       padding: 0 20px;
-
       cursor: pointer;
       line-height: 80px;
-
       a {
         color: $mainColor;
       }
     }
   }
-
   .nav__btn {
     display: flex;
+    margin-left: 200px;
     width: 300px;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
     .reserve,
     .profile {
@@ -94,7 +85,7 @@ $categorySize : 585px;
       padding: 0 28px;
       height: 38px;
       border-radius: 20px;
-      border: none;
+      border: black;
       font-size: 14px;
       cursor: pointer;
     }
