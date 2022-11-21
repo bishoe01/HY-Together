@@ -2,37 +2,18 @@ import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import { useNavigate } from 'react-router-dom';
-import {
-  Grid,
-  GridItem,
-  List,
-  ListItem,
-  ListIcon,
-  OrderedList,
-  UnorderedList,
-  Box,
-} from '@chakra-ui/react'
+import { Grid, GridItem, List, ListItem, ListIcon, OrderedList, UnorderedList, Box } from '@chakra-ui/react';
 
 const building = {
   '건물 1': {
-    '건물 1 - 방 1': {
-
-    },
-    '건물 1 - 방 2': {
-
-    }
+    '건물 1 - 방 1': {},
+    '건물 1 - 방 2': {},
   },
   '건물 2': {
-    '건물 2 - 방 1': {
-
-    },
-    '건물 2 - 방 2': {
-
-    }
-  }
-}
-
-
+    '건물 2 - 방 1': {},
+    '건물 2 - 방 2': {},
+  },
+};
 
 function Home(props) {
   const navigate = useNavigate();
@@ -48,11 +29,9 @@ function Home(props) {
   const [selectedBuilding, setSelectedBuilding] = useState('건물 1');
   const room = useMemo(() => Object.keys(building[selectedBuilding]), [selectedBuilding]);
 
-  
   const getData = async () => {
     // await fetch("").then()
-  }
-
+  };
 
   // useEffect(() => {
   //   console.log(selectedBuilding);
@@ -69,17 +48,11 @@ function Home(props) {
             </Box>
             <Box>
               <List>
-                {
-                  Object.keys(building).map((v, i) => (
-                    <ListItem
-                      key={i}
-                      style={{ cursor: 'pointer' }}
-                      onClick={_ => setSelectedBuilding(v)}
-                    >
-                      {v}
-                    </ListItem>
-                  ))
-                }
+                {Object.keys(building).map((v, i) => (
+                  <ListItem key={i} style={{ cursor: 'pointer' }} onClick={() => setSelectedBuilding(v)}>
+                    {v}
+                  </ListItem>
+                ))}
               </List>
             </Box>
           </Box>
@@ -91,16 +64,11 @@ function Home(props) {
             </Box>
             <Box>
               <List>
-                {
-                  room.map((v, i) => (
-                    <ListItem
-                      key={i}
-                      style={{ cursor: 'pointer' }}
-                    >
-                      {v}
-                    </ListItem>
-                  ))
-                }
+                {room.map((v, i) => (
+                  <ListItem key={i} style={{ cursor: 'pointer' }}>
+                    {v}
+                  </ListItem>
+                ))}
               </List>
             </Box>
           </Box>
@@ -132,11 +100,7 @@ function Home(props) {
     //     <img src="imgs/banner/Third.jpg" alt="" />
     //   </div>
     // </div>
-
   );
 }
-
-
-
 
 export default Home;
