@@ -67,8 +67,8 @@ export default function Navigation() {
           bg={useColorModeValue('white', 'gray.800')}
           color={useColorModeValue('gray.600', 'white')}
           minH={'60px'}
-          py={{ base: 2 }}
-          px={{ base: 4 }}
+          py={{ base: 4 }}
+          px={{ base: 10 }}
           borderBottom={1}
           borderStyle={'solid'}
           borderColor={useColorModeValue('gray.200', 'gray.900')}
@@ -77,9 +77,15 @@ export default function Navigation() {
             <IconButton onClick={onToggle} icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />} variant={'ghost'} aria-label={'Toggle Navigation'} />
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-            <div>
-              <img src='/imgs/HY-Together/logotext.png' style={{ width: '180px' }} />
-            </div>
+            <Box
+              style={{
+                backgroundImage: `url(/imgs/HY-Together/logotext.png)`,
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
+                width: '180px',
+                minHeight: '30px',
+              }}></Box>
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
               <DesktopNav />
             </Flex>
@@ -87,7 +93,7 @@ export default function Navigation() {
 
           <Stack flex={{ base: 1, md: 0 }} justify={'flex-end'} direction={'row'} spacing={6}>
             <Button as={'a'} fontSize={'md'} fontWeight={400} variant={'link'} href={'#'}>
-              Sign In
+              임시 버튼
             </Button>
             <Button
               display={{ base: 'none', md: 'inline-flex' }}
@@ -99,7 +105,7 @@ export default function Navigation() {
               _hover={{
                 bg: 'messenger.400',
               }}>
-              Sign Up
+              로그인
             </Button>
           </Stack>
         </Flex>
@@ -125,13 +131,14 @@ const DesktopNav = () => {
               <Link
                 p={2}
                 href={navItem.href ?? '#'}
-                fontSize={'md'}
-                fontWeight={500}
+                fontSize={'lg'}
+                fontWeight={400}
                 color={linkColor}
                 _hover={{
                   textDecoration: 'none',
                   color: linkHoverColor,
-                }}>
+                }}
+                style={{ padding: '0' }}>
                 {navItem.label}
               </Link>
             </PopoverTrigger>

@@ -23,7 +23,7 @@ function App() {
   }, []);
   return (
     <>
-      <ChakraProvider>
+      <ChakraProvider style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
         <Navigation />
         <Routes>
           <Route
