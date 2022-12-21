@@ -16,12 +16,20 @@ $categorySize : 585px;
   font-family: noto;
   src: url('./fonts/Noto_Sans/NotoSans-Regular.ttf');
 }
+@font-face {
+  font-family: GmarketMedium;
+  src: url('./fonts/GmarketSans/GmarketSansTTFMedium.ttf');
+}
 
+@font-face {
+  font-family: GmarketBold;
+  src: url('./fonts/GmarketSans/GmarketSansTTFBold.ttf');
+}
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'noto';
+  font-family: 'GmarketMedium';
 
   h1,
   h2,

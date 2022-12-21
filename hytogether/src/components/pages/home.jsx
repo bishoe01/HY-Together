@@ -2,6 +2,8 @@ import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import { useNavigate } from 'react-router-dom';
+import DatePicker from "react-datepicker";
+import { useImmer } from 'use-immer';
 import {
   Grid,
   GridItem,
@@ -16,57 +18,32 @@ import {
 const building = {
   '건물 1': {
     '건물 1 - 방 1': {
-
     },
     '건물 1 - 방 2': {
-
     }
   },
   '건물 2': {
     '건물 2 - 방 1': {
-
     },
     '건물 2 - 방 2': {
-
     }
   }
 }
-
-
-
 function Home(props) {
   const navigate = useNavigate();
-  // useEffect(() => {
-  //   window.addEventListener('scroll', () => {
-  //     if (window.scrollY > 100) {
-  //     } else {
-  //       document.querySelector('.nav').classList.remove('nav__black');
-  //     }
-  //   })
-  // }, []);
-
   const [selectedBuilding, setSelectedBuilding] = useState('건물 1');
   const room = useMemo(() => Object.keys(building[selectedBuilding]), [selectedBuilding]);
-
-  
+  const [month, setMonth] = useState(new Date().getMonth());
   const getData = async () => {
     // await fetch("").then()
   }
-
-
-  // useEffect(() => {
-  //   console.log(selectedBuilding);
-  //   console.log(room)
-  // }, [room, selectedBuilding]);
 
   return (
     <>
       <Grid templateColumns='repeat(12, 1fr)' style={{ textAlign: 'center' }}>
         <GridItem colSpan={3}>
           <Box bg={'red'} h={100}>
-            <Box bg={'#333'} color={'#fff'}>
-              건물
-            </Box>
+            <Box borderRight={'1px solid white'} bg={'#333'} color={'#fff'}>대학</Box>
             <Box>
               <List>
                 {
@@ -108,31 +85,20 @@ function Home(props) {
         <GridItem colSpan={1}>
           <Box bg={'orange'} h={100}>
             날짜
+            <Box>
+
+            </Box>
           </Box>
         </GridItem>
         <GridItem colSpan={5}>
           <Box bg={'pink'} h={100}>
             시간
+            <Box>
+            </Box>
           </Box>
         </GridItem>
       </Grid>
     </>
-    // <div className='main'>
-    //   <div className="mainBanner" id="1">
-    //     <img src="imgs/banner/sky.jpg" alt="" />
-    //     <Fade bottom>
-    //       <h1>HY-ERICA 팀플실 예약서비스</h1>
-    //     </Fade>
-    //   </div>
-
-    //   <div className="mainBanner" id="2">
-    //     <img src="imgs/banner/Second.jpg" alt="" />
-    //   </div>
-    //   <div className="mainBanner" id="3">
-    //     <img src="imgs/banner/Third.jpg" alt="" />
-    //   </div>
-    // </div>
-
   );
 }
 

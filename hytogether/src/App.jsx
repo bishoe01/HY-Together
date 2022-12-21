@@ -10,9 +10,12 @@ import { Fade } from 'react-reveal';
 import PublicLayout from './components/layout/PublicLayout';
 
 import { ChakraProvider } from '@chakra-ui/react'
+import ModalComponent from './components/Modal/modal';
+import Ddaypicker from './components/Modal/Ddaypicker';
 
 function App() {
   const [selfInfo, setselfInfo] = useState(null);
+  
   useEffect(() => {
     fetch("studentData.json")
       .then(res => res.json())
@@ -21,6 +24,7 @@ function App() {
       console.log(selfInfo);
     };
   }, []);
+  
   return (
     <>
       <ChakraProvider>
@@ -34,6 +38,11 @@ function App() {
               </PublicLayout>
             }
           />
+          <Route path='/kevin' element={
+            <PublicLayout>
+          <Ddaypicker />
+          </PublicLayout>
+          } />
           {/* <Route path="/about" element={<About/>}/> */}
           <Route
             path={`/${selfInfo}`}
