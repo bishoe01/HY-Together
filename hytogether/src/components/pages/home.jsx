@@ -40,66 +40,11 @@ function Home(props) {
 
   return (
     <>
-      <Grid templateColumns='repeat(12, 1fr)' style={{ textAlign: 'center' }}>
-        <GridItem colSpan={3}>
-          <Box bg={'red'} h={100}>
-            <Box bg={'#333'} color={'#fff'}>
-              건물
-            </Box>
-            <Box>
-              <List>
-                {Object.keys(building).map((v, i) => (
-                  <ListItem key={i} style={{ cursor: 'pointer' }} onClick={() => setSelectedBuilding(v)}>
-                    {v}
-                  </ListItem>
-                ))}
-              </List>
-            </Box>
-          </Box>
-        </GridItem>
-        <GridItem colSpan={3}>
-          <Box bg={'blue'} h={100}>
-            <Box bg={'#333'} color={'#fff'}>
-              팀플실
-            </Box>
-            <Box>
-              <List>
-                {room.map((v, i) => (
-                  <ListItem key={i} style={{ cursor: 'pointer' }}>
-                    {v}
-                  </ListItem>
-                ))}
-              </List>
-            </Box>
-          </Box>
-        </GridItem>
-        <GridItem colSpan={1}>
-          <Box bg={'orange'} h={100}>
-            날짜
-          </Box>
-        </GridItem>
-        <GridItem colSpan={5}>
-          <Box bg={'pink'} h={100}>
-            시간
-          </Box>
-        </GridItem>
-      </Grid>
+      <Box style={{ textAlign: 'center' }}>
+        <button>장소대여 시작하기</button>
+        <Box style={{ marginTop: '500px' }}>데이터 관련</Box>
+      </Box>
     </>
-    // <div className='main'>
-    //   <div className="mainBanner" id="1">
-    //     <img src="imgs/banner/sky.jpg" alt="" />
-    //     <Fade bottom>
-    //       <h1>HY-ERICA 팀플실 예약서비스</h1>
-    //     </Fade>
-    //   </div>
-
-    //   <div className="mainBanner" id="2">
-    //     <img src="imgs/banner/Second.jpg" alt="" />
-    //   </div>
-    //   <div className="mainBanner" id="3">
-    //     <img src="imgs/banner/Third.jpg" alt="" />
-    //   </div>
-    // </div>
   );
 }
 
